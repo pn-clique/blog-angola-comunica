@@ -1,0 +1,64 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Gustav Elijah Ahr\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add axios
+
+PATH: 
+  C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Users\Gustav Elijah Ahr\AppData\Local\Microsoft\WindowsApps;;C:\Users\Gustav Elijah Ahr\AppData\Roaming\npm;C:\Users\Gustav Elijah Ahr\AppData\Local\Programs\Microsoft VS Code\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.18.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:71:26)
+
+npm manifest: 
+  {
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.16.3",
+      "@testing-library/react": "^12.1.4",
+      "@testing-library/user-event": "^13.5.0",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-scripts": "5.0.0",
+      "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
