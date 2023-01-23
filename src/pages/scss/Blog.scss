@@ -15,6 +15,22 @@
     }
 }
 
+.partners-section
+{   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .partners
+    {
+        display: flex;
+        margin: 2rem 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 .contacts-section
 {
     width: 100%;
@@ -40,8 +56,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 25rem;
+        width: 40%;
 
+        @media screen and (max-width: 748px) {
+            width: 100%;
+        }
+        
         .from-user, textarea{
             width: 100%;
             background-color: #fff;
@@ -52,6 +72,7 @@
             margin-bottom: 1rem;
             border-radius: 7px;
             border: none;
+            outline: none;
         }
 
         .form-button

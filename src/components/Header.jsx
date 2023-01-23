@@ -38,7 +38,7 @@ export default (props) => {
                         </span>
                     </div>
 
-                    <a className = "signIn-button" href="/">Cadastrar-se</a>
+                    <a className = "signIn-button" href="/signUp">Cadastrar-se</a>
 
                     <div onClick = {showMenu} className="nav-hamburger">
                         <div className="bars">
@@ -53,7 +53,7 @@ export default (props) => {
                     <ul className="container">
                         {props.children}
                     </ul>
-                    <a className = "signIn-button" href="/">Cadastrar-se</a>
+                    <a className = "signIn-button" href="/signUp">Cadastrar-se</a>
                 </nav>
             </header>
         </>

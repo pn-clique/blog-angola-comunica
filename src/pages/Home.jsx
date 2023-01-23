@@ -5,26 +5,27 @@ import React, {useState} from "react";
 import './scss/Home.scss';
 
 /*--------- Components ---------*/
+import Title from "../components/Title";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
-import Categories from "../components/Categories";
 import Detail from  '../components/Detail';
-import Title from "../components/Title";
+import Partner from "../components/Partner";
+import Categories from "../components/Categories";
 import ArticleCard from "../components/ArticleCard";
 
 /*----------- Images -----------*/
 import logoHero from '../assets/images/logo-hero.svg';
-import aboutImage from '../assets/images/about-image.svg';
 import detailImage from '../assets/images/detail-1.svg';
+import aboutImage from '../assets/images/about-image.svg';
 
 /*----------- Icons -----------*/
 import emailIcon from '../assets/images/icons/icons8_mail.svg';
-import phoneIcon from '../assets/images/icons/icons8_sip_dialer.svg';
 import emailIconW from '../assets/images/icons/icons8_mail_1.svg';
-import phoneIconW from '../assets/images/icons/icons8_sip_dialer_1.svg';
-import facebookIcon from '../assets/images/icons/icons8_facebook_circled.svg';
-import instagarmIcon from '../assets/images/icons/icons8_instagram.svg';
 import twitterIcon from '../assets/images/icons/icons8_Twitter.svg';
+import phoneIcon from '../assets/images/icons/icons8_sip_dialer.svg';
+import phoneIconW from '../assets/images/icons/icons8_sip_dialer_1.svg';
+import instagarmIcon from '../assets/images/icons/icons8_instagram.svg';
+import facebookIcon from '../assets/images/icons/icons8_facebook_circled.svg';
 
 
 export default () => {
@@ -42,7 +43,7 @@ export default () => {
 
             const appearOptions = {
                 treshold: 0,
-                rootMargin: '0px 0px -100px 0px'
+                rootMargin: '0px 0px -50px 0px'
             }
 
             const appearOnScroll = new IntersectionObserver(
@@ -149,7 +150,7 @@ export default () => {
                             />
                     </section>
 
-                    <div className="separator-1"></div>
+                    <div className="separator-1" />
 
                     <section className="articles-section grid">
                         <Title 
@@ -163,7 +164,21 @@ export default () => {
                         <ArticleCard />
                     </section>
 
-                    <div className="separator-2"></div>
+                    <div className="separator-2" />
+
+                    <section className="partners-section grid">
+                        <Title 
+                            title="Nossos Parceiros"
+                        />
+
+                        <div className="partners">
+                            <Partner />
+                            <Partner />
+                            <Partner />
+                        </div>      
+                    </section>
+
+                    <div className="separator-1" />
 
                     <section className="contacts-section grid">
                         <Title title="Contacte-nos"/>

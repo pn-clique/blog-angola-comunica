@@ -5,10 +5,11 @@ import React, {useState} from "react";
 import './scss/Blog.scss';
 
 /*--------- Components ---------*/
+import Title from "../components/Title";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
+import Partner from "../components/Partner";
 import Categories from "../components/Categories";
-import Title from "../components/Title";
 import ArticleCard from "../components/ArticleCard";
 
 /*----------- Images -----------*/
@@ -16,12 +17,12 @@ import logoHero from '../assets/images/logo-hero.svg';
 
 /*----------- Icons -----------*/
 import emailIcon from '../assets/images/icons/icons8_mail.svg';
-import phoneIcon from '../assets/images/icons/icons8_sip_dialer.svg';
 import emailIconW from '../assets/images/icons/icons8_mail_1.svg';
-import phoneIconW from '../assets/images/icons/icons8_sip_dialer_1.svg';
-import facebookIcon from '../assets/images/icons/icons8_facebook_circled.svg';
-import instagarmIcon from '../assets/images/icons/icons8_instagram.svg';
 import twitterIcon from '../assets/images/icons/icons8_Twitter.svg';
+import phoneIcon from '../assets/images/icons/icons8_sip_dialer.svg';
+import phoneIconW from '../assets/images/icons/icons8_sip_dialer_1.svg';
+import instagarmIcon from '../assets/images/icons/icons8_instagram.svg';
+import facebookIcon from '../assets/images/icons/icons8_facebook_circled.svg';
 
 
 export default () => {
@@ -119,6 +120,20 @@ export default () => {
                     <p>Encontre os artigos e notícias que deseja, ou tente pesquisá-las</p>
                     
                     <ArticleCard />
+                </section>
+
+                <div className="separator-2"></div>
+
+                <section className="partners-section grid">
+                    <Title 
+                        title="Nossos Parceiros"
+                    />
+
+                    <div className="partners">
+                        <Partner />
+                        <Partner />
+                        <Partner />
+                    </div>      
                 </section>
 
                 <div className="separator-1"></div>

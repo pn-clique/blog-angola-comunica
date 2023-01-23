@@ -18,12 +18,12 @@ import aboutImage from '../assets/images/about-image.svg';
 
 /*----------- Icons -----------*/
 import emailIcon from '../assets/images/icons/icons8_mail.svg';
-import phoneIcon from '../assets/images/icons/icons8_sip_dialer.svg';
 import emailIconW from '../assets/images/icons/icons8_mail_1.svg';
-import phoneIconW from '../assets/images/icons/icons8_sip_dialer_1.svg';
-import facebookIcon from '../assets/images/icons/icons8_facebook_circled.svg';
-import instagarmIcon from '../assets/images/icons/icons8_instagram.svg';
 import twitterIcon from '../assets/images/icons/icons8_Twitter.svg';
+import phoneIcon from '../assets/images/icons/icons8_sip_dialer.svg';
+import phoneIconW from '../assets/images/icons/icons8_sip_dialer_1.svg';
+import instagarmIcon from '../assets/images/icons/icons8_instagram.svg';
+import facebookIcon from '../assets/images/icons/icons8_facebook_circled.svg';
 
 export default () => {
     let [fadeState, setFadeState]  = useState(false);
